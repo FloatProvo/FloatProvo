@@ -1,0 +1,118 @@
+/* General Reset and Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Backline', sans-serif;
+}
+
+.hot-chocolate-container {
+  padding: 3rem;
+  background-color: #FFF;  /* Clean white background */
+  color: #333;
+  text-align: center;
+}
+
+/* Title Styling */
+.hot-chocolate-title {
+  font-size: 3rem;
+  font-family: 'Cubano', sans-serif;  /* Bold font for title */
+  font-weight: 900;
+  color: #FF851B;  /* Orange for title */
+  margin-bottom: 2rem;
+}
+
+/* Description */
+.hot-chocolate-description {
+  font-size: 1.5rem;
+  font-family: 'GTEastiDisplay', sans-serif;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 3rem;
+}
+
+/* Menu Title */
+.menu-title {
+  font-size: 2.5rem;
+  font-family: 'Cubano', sans-serif;  /* Bold for section title */
+  color: #FF851B;  /* Orange section title */
+  margin-bottom: 1rem;
+}
+
+/* Hot Chocolate Price */
+.hot-chocolate-price {
+  font-size: 1.8rem;
+  font-family: 'Backline', sans-serif;  /* Fun, bold font for price */
+  color: #FF851B;  /* Orange price color */
+  margin-bottom: 2rem;
+}
+
+/* Hot Chocolate Menu */
+.hot-chocolate-menu {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.3rem;
+  color: #333;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hot-chocolate-menu li {
+  margin-bottom: 1.5rem;
+}
+
+.hot-chocolate-menu .highlight {
+  color: #FF851B;  /* Orange highlight for emphasis */
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2rem;
+  color: #FF851B;
+  margin-bottom: 1rem;
+}
+
+.contact-email {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.email {
+  color: #FF851B;
+  font-weight: bold;
+}
+
+.email:hover {
+  color: #FFDDC1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hot-chocolate-title {
+    font-size: 2.5rem;
+  }
+
+  .menu-title {
+    font-size: 2rem;
+  }
+
+  .hot-chocolate-price {
+    font-size: 1.5rem;
+  }
+
+  .hot-chocolate-description,
+  .hot-chocolate-menu li {
+    font-size: 1.2rem;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Backline', sans-serif;  /* Fun and bold font */
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Root Beer Container */
+.rootbeer-container {
+  padding: 3rem;
+  background-color: #fefae0;  /* Light cream background */
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title Styling */
+.rootbeer-title {
+  font-size: 3.5rem;
+  font-family: 'Cubano', sans-serif;  /* Bold and stylish font for title */
+  color: #FF851B;  /* Bright orange title color */
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+}
+
+/* Intro Description */
+.rootbeer-intro {
+  font-size: 1.6rem;
+  font-family: 'GTEastiDisplay', sans-serif;  /* Use GTEastiDisplay for descriptions */
+  color: #555;
+  text-align: justify;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Root Beer List */
+.rootbeer-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  color: #333;
+  text-align: justify;
+  line-height: 2.2;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'GTEastiDisplay', sans-serif;  /* Use a clean and readable font */
+}
+
+.rootbeer-list li {
+  margin-bottom: 1.5rem;
+}
+
+/* Root Beer Names Styling */
+.rootbeer-list li strong {
+  font-family: 'Cubano', sans-serif;  /* Bold and stylish font for names */
+  color: #FF851B;  /* Orange color for root beer names */
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+/* Hover effect for the root beer names */
+.rootbeer-list li strong:hover {
+  color: #ff9b42;  /* Brighter orange on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rootbeer-title {
+    font-size: 2.8rem;
+  }
+
+  .rootbeer-intro {
+    font-size: 1.3rem;
+  }
+
+  .rootbeer-list li {
+    font-size: 1.2rem;
+  }
+
+  .rootbeer-list li strong {
+    font-size: 1.4rem;
+  }
+}

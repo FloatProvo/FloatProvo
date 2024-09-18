@@ -1,0 +1,173 @@
+/* General Reset and Layout */
+@font-face {
+  font-family: 'Font1';
+  src: url('./font1.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Font2';
+  src: url('./font2.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Font3';
+  src: url('./font3.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Font4';
+  src: url('./font4.otf') format('opentype');
+}
+
+/* Use Font3 for readability */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Font3', sans-serif; /* Use Font3 for overall readability */
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container Layout */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  background-color: #fff; /* White background for the site */
+}
+
+/* Hero Section */
+.homepage-hero-section {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #FFEEC2; /* Cream background */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.homepage-hero-heading {
+  font-size: 4rem; /* Large font size for better readability */
+  color: #FF851B; /* Bright orange */
+  font-family: 'Font3', sans-serif; /* Use Font3 for maximum readability */
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px; /* Reduced letter spacing for clarity */
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for contrast */
+}
+
+.homepage-cta-btn {
+  padding: 1rem 3rem;
+  background-color: #FF851B;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Font3', sans-serif; /* Font3 for button text */
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.homepage-cta-btn:hover {
+  background-color: #ff9b42;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Bubble Categories Section */
+.homepage-bubble-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4rem 0;
+  gap: 2rem;
+}
+
+.homepage-bubble {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #FF851B; /* Solid orange bubble */
+  color: #fff; /* White text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-family: 'Font3', sans-serif; /* Use Font3 for readability */
+  position: relative;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 4px solid #FFDDC1; /* Cream border */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.homepage-bubble:hover {
+  transform: scale(1.1); /* Make the bubbles pop on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.homepage-bubble span {
+  z-index: 2;
+  font-size: 1.3rem;
+  font-family: 'Font3', sans-serif; /* Use Font3 for readability */
+  color: #fff; /* White text */
+  font-weight: bold;
+}
+
+/* Footer Section */
+.homepage-footer {
+  background-color: #FF851B;  /* Bright orange background */
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-footer p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-family: 'Font3', sans-serif; /* Font3 for readability */
+  color: #fff;
+}
+
+.homepage-email-link {
+  color: #fff;
+  text-decoration: underline;
+  font-family: 'Font3', sans-serif; /* Font3 for email link */
+}
+
+.homepage-email-link:hover {
+  color: #FFDDC1; /* Light cream on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .homepage-hero-heading {
+    font-size: 3rem; /* Adjusted font size for mobile */
+  }
+
+  .homepage-bubble {
+    width: 120px;
+    height: 120px;
+    font-size: 1.1rem;
+  }
+
+  .homepage-cta-btn {
+    font-size: 1.1rem;
+  }
+
+  .homepage-footer {
+    font-size: 0.9rem;
+  }
+}

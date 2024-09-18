@@ -1,0 +1,168 @@
+/* General Reset */
+@font-face {
+  font-family: 'Backline';
+  src: url('./font1.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Cubano';
+  src: url('./font2.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GTEastiDisplay';
+  src: url('./font3.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Backline', 'Cubano', 'GTEastiDisplay', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  font-family: 'Backline', sans-serif;
+}
+
+/* Floats Container */
+.floats-container {
+  padding: 2rem;
+  background-color: #fefae0;  /* Light cream background */
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Backline', sans-serif;
+}
+
+/* Title */
+.floats-title {
+  font-family: 'Cubano', sans-serif;
+  font-size: 3.5rem;
+  color: #FF851B;  /* Orange title color */
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+/* Description */
+.floats-description {
+  font-family: 'GTEastiDisplay', sans-serif;
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: #FF851B;
+  font-weight: bold;
+  font-family: 'Backline', sans-serif;
+}
+
+/* Size Options */
+.menu-title {
+  font-family: 'Cubano', sans-serif;
+  font-size: 2.8rem;
+  color: #FF851B;
+  margin-bottom: 1.5rem;
+}
+
+.float-sizes {
+  list-style-type: none;
+  padding-left: 0;
+  font-family: 'GTEastiDisplay', sans-serif;
+}
+
+.float-sizes li {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.price {
+  color: #FF851B;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: 'Backline', sans-serif;
+}
+
+.float-note {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Signature Flavors */
+.flavor-title {
+  font-family: 'Cubano', sans-serif;
+  font-size: 2.8rem;
+  color: #FF851B;
+  margin-bottom: 2rem;
+}
+
+.flavor-menu {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.4rem;
+  line-height: 2;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flavor-menu li {
+  margin-bottom: 1.2rem;
+  font-family: 'GTEastiDisplay', sans-serif;
+}
+
+.flavor-menu .highlight {
+  color: #FF851B;
+  font-weight: bold;
+  font-family: 'Backline', sans-serif;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-top: 3rem;
+}
+
+.contact-title {
+  font-family: 'Cubano', sans-serif;
+  font-size: 2.5rem;
+  color: #FF851B;
+  margin-bottom: 1.5rem;
+}
+
+.contact-email {
+  font-family: 'GTEastiDisplay', sans-serif;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.email {
+  color: #FF851B;
+  font-weight: bold;
+  font-family: 'Backline', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .floats-title, .menu-title, .flavor-title {
+    font-size: 2.5rem;
+  }
+
+  .float-sizes li, .flavor-menu li {
+    font-size: 1.3rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+}

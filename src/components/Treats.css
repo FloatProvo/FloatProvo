@@ -1,0 +1,144 @@
+/* General Reset */
+@font-face {
+  font-family: 'Cubano';
+  src: url('./font2.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GTEastiDisplay';
+  src: url('./font1.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Hore';
+  src: url('./font3.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cubano', sans-serif; /* Using custom font */
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container Layout */
+.treats-container {
+  padding: 2rem;
+  background-color: #FFFAF3; /* Cream background */
+  text-align: center;
+}
+
+/* Title Styling */
+.treats-title {
+  font-size: 3rem;
+  font-family: 'GTEastiDisplay', sans-serif; /* Bold, clear font */
+  color: #FF851B; /* Orange title */
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Description Styling */
+.treats-description {
+  font-size: 1.3rem;
+  font-family: 'Cubano', sans-serif; /* Clean font */
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Highlighted Text */
+.highlight {
+  font-family: 'Hore', sans-serif;
+  font-weight: bold;
+  color: #FF851B; /* Orange highlight */
+}
+
+/* Menu Section */
+.menu-title {
+  font-size: 2.5rem;
+  font-family: 'GTEastiDisplay', sans-serif;
+  color: #FF851B;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.treats-menu {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.treats-menu li {
+  margin-bottom: 0.8rem;
+}
+
+/* Price Styling */
+.price {
+  font-size: 1rem;
+  font-family: 'Cubano', sans-serif;
+  color: #FF851B; /* Orange prices */
+  font-weight: bold;
+}
+
+/* Treat Description */
+.treat-description {
+  font-size: 1.2rem;
+  font-family: 'Cubano', sans-serif;
+  color: #555;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  text-align: justify;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-top: 3rem;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-family: 'GTEastiDisplay', sans-serif;
+  color: #FF851B;
+  margin-bottom: 1rem;
+}
+
+.contact-email {
+  font-size: 1.1rem;
+  font-family: 'Cubano', sans-serif;
+  color: #555;
+}
+
+.email {
+  color: #FF851B;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .treats-title, .menu-title, .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .treats-description, .treat-description {
+    font-size: 1.2rem;
+  }
+
+  .price {
+    font-size: 0.9rem;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+}
