@@ -6,7 +6,7 @@ const RootBeer = () => {
   return (
     <div className="rootbeer-container">
       <Header /> {/* Header with logo and dropdown */}
-      
+
       <h1 className="rootbeer-title">Our Root Beers</h1>
       <p className="rootbeer-intro">We offer a wide variety of delicious root beers. Here’s a list of some of the most popular ones we serve:</p>
 

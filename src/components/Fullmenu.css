@@ -31,7 +31,7 @@ body {
 /* Full Menu Container */
 .full-menu-container {
   padding: 2rem;
-  background-color: #fefae0;  /* Light cream background */
+  background-color: #fefae0;
   color: #333;
   max-width: 1200px;
   margin: 0 auto;
@@ -43,7 +43,7 @@ body {
 .full-menu-title {
   font-family: 'Cubano', sans-serif;
   font-size: 3.5rem;
-  color: #FF851B;  /* Orange title color */
+  color: #FF851B;
   margin-bottom: 2rem;
   letter-spacing: 2px;
 }
@@ -61,7 +61,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Menu Items */
+/* Menu Items - Prices placed directly next to sizes */
 .menu-items {
   list-style-type: none;
   padding-left: 0;
@@ -74,10 +74,10 @@ body {
   margin-bottom: 0.8rem;
 }
 
-.price {
+.menu-items li span {
+  margin-left: 0.5rem;
   color: #FF851B;
   font-weight: bold;
-  font-size: 1.2rem;
   font-family: 'Backline', sans-serif;
 }
 
@@ -147,5 +147,63 @@ body {
 
   .contact-title {
     font-size: 2rem;
+  }
+}
+
+/* Spacing and Layout Enhancements */
+.full-menu-container {
+  padding: 3rem 1rem;
+}
+
+.menu-items,
+.float-flavors,
+.soda-flavors,
+.energy-flavors,
+.water-flavors,
+.hot-chocolate-flavors {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Advanced Menu Styling */
+.menu-items li {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.price {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* Hover Effects */
+.menu-items li:hover,
+.float-flavors li:hover,
+.soda-flavors li:hover,
+.energy-flavors li:hover,
+.water-flavors li:hover,
+.hot-chocolate-flavors li:hover {
+  background-color: #fffae6;
+}
+
+/* Ultra Responsive Design for Smaller Screens */
+@media (max-width: 480px) {
+  .full-menu-title, .menu-category {
+    font-size: 2rem;
+  }
+
+  .menu-items li, .float-flavors li, .soda-flavors li, .energy-flavors li, .water-flavors li, .hot-chocolate-flavors li {
+    font-size: 1.2rem;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-email {
+    font-size: 1.2rem;
   }
 }

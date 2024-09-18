@@ -48,7 +48,7 @@ body {
   letter-spacing: 2px;
 }
 
-/* Freeze Sizes */
+/* Freeze Sizes - Prices next to sizes */
 .freeze-sizes {
   list-style-type: none;
   padding-left: 0;
@@ -61,10 +61,10 @@ body {
   margin-bottom: 0.8rem;
 }
 
-.price {
+.freeze-sizes li span {
+  margin-left: 0.5rem;
   color: #FF851B;
   font-weight: bold;
-  font-size: 1.2rem;
   font-family: 'Backline', sans-serif;
 }
 
@@ -110,6 +110,23 @@ body {
   font-family: 'Backline', sans-serif;
 }
 
+/* Buttons */
+.freezes-container .submit-button {
+  padding: 1rem 2rem;
+  background-color: #FF851B;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Cubano', sans-serif;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.freezes-container .submit-button:hover {
+  background-color: #ff9b42;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .freezes-title, .contact-title {
@@ -122,5 +139,76 @@ body {
 
   .contact-title {
     font-size: 2rem;
+  }
+
+  .submit-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* Layout and Spacing Enhancements */
+.freezes-container {
+  padding: 3rem 1rem;
+}
+
+.freeze-sizes, .freeze-description {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Advanced Menu Styling */
+.freeze-sizes li {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.price {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* Hover Effects */
+.freeze-sizes li:hover {
+  background-color: #fffae6;
+}
+
+.freezes-container .submit-button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.freezes-container .submit-button:hover {
+  transform: translateY(-3px);
+}
+
+/* Ultra Responsive Design for Smaller Screens */
+@media (max-width: 480px) {
+  .freezes-title, .contact-title {
+    font-size: 2rem;
+  }
+
+  .freeze-sizes li, .freeze-description {
+    font-size: 1.2rem;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-email {
+    font-size: 1.2rem;
+  }
+
+  .submit-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .freezes-container {
+    padding: 1rem;
   }
 }

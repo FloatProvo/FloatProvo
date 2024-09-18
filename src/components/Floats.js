@@ -7,12 +7,7 @@ const Floats = () => {
     <div className="floats-container">
       <Header /> {/* Header with logo and dropdown */}
       
-      <h1 className="floats-title">Root Beer Floats</h1>
-      <p className="floats-description">
-        At <span className="highlight">Float</span>, our root beer floats aren’t just a drink, they’re an experience. We take pride in crafting the perfect blend of rich, creamy ice cream and the finest root beer, served in a premium glass bottle for that extra fizz and pop. From classic favorites to inventive new combinations, we ensure every float is a memorable indulgence.
-      </p>
-
-      <h2 className="menu-title">Size Options</h2>
+      <h1 className="menu-title">Root Beer Floats</h1>
       <ul className="float-sizes">
         <li>Small - <span className="price">$6.99</span></li>
         <li>Medium - <span className="price">$8.99</span></li>

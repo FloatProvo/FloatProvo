@@ -43,34 +43,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Description Styling */
-.sodas-description {
-  font-size: 1.3rem;
-  font-family: 'Cubano', sans-serif; /* Clear and clean font */
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 2.5rem;
-  text-align: justify;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Highlighted Text */
-.highlight {
-  font-family: 'Hore', sans-serif;
-  font-weight: bold;
-  color: #FF851B; /* Orange highlight */
-}
-
-/* Menu Section */
-.menu-title {
-  font-size: 2.5rem;
-  font-family: 'GTEastiDisplay', sans-serif;
-  color: #FF851B;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-}
-
 /* Soda Sizes Styling */
 .soda-sizes {
   list-style: none;
@@ -84,19 +56,12 @@ body {
 }
 
 .price {
-  font-size: 1rem; /* Smaller prices */
+  font-size: 1.2rem; /* Slightly larger prices for better visibility */
   color: #FF851B; /* Orange prices */
   font-weight: bold;
 }
 
 /* Signature Soda Flavors */
-.flavor-title {
-  font-size: 2.5rem;
-  font-family: 'GTEastiDisplay', sans-serif;
-  color: #FF851B;
-  margin-bottom: 1.5rem;
-}
-
 .flavor-list {
   list-style: none;
   padding-left: 0;
@@ -110,6 +75,12 @@ body {
 
 .flavor-list li {
   margin-bottom: 1.2rem;
+}
+
+.highlight {
+  font-family: 'Hore', sans-serif;
+  font-weight: bold;
+  color: #FF851B; /* Orange highlight */
 }
 
 /* Contact Section */
@@ -137,16 +108,16 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .sodas-title, .menu-title, .flavor-title {
+  .sodas-title {
     font-size: 2.5rem;
   }
 
-  .sodas-description, .flavor-list li {
+  .soda-sizes li, .flavor-list li {
     font-size: 1.2rem;
   }
 
   .price {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .contact-title {

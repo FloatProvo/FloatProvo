@@ -18,42 +18,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Backline', 'Cubano', 'GTEastiDisplay', sans-serif; /* Ensure all elements use the custom fonts */
+  font-family: 'Backline', 'Cubano', 'GTEastiDisplay', sans-serif;
 }
 
 body {
   background-color: #fff;
   color: #333;
   line-height: 1.6;
-  font-family: 'Backline', sans-serif; /* Body text default to 'Backline' */
+  font-family: 'Backline', sans-serif;
 }
 
 /* Energy Container */
 .energy-container {
   padding: 2rem;
-  background-color: #fefae0;  /* Light cream background */
+  background-color: #fefae0;
   color: #333;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  font-family: 'Backline', sans-serif; /* Ensure container uses 'Backline' */
+  font-family: 'Backline', sans-serif;
 }
 
 /* Menu Title */
 .menu-title {
-  font-family: 'Cubano', sans-serif; /* Use 'Cubano' for titles */
+  font-family: 'Cubano', sans-serif;
   font-size: 3.5rem;
-  color: #FF851B;  /* Orange color for the title */
+  color: #FF851B;
   margin-bottom: 2rem;
   letter-spacing: 2px;
 }
 
-/* Energy Menu */
+/* Energy Menu - Keeping prices next to the sizes */
 .energy-menu {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 2rem;
-  font-family: 'GTEastiDisplay', sans-serif; /* Use 'GTEastiDisplay' for menu */
+  font-family: 'GTEastiDisplay', sans-serif;
 }
 
 .energy-menu li {
@@ -62,16 +62,16 @@ body {
   margin-bottom: 0.8rem;
 }
 
-.price {
+.energy-menu li span {
+  margin-left: 0.5rem; /* Small space between size and price */
   color: #FF851B;
   font-weight: bold;
-  font-size: 1.2rem;
-  font-family: 'Backline', sans-serif; /* Ensure prices use 'Backline' */
+  font-family: 'Backline', sans-serif;
 }
 
 /* Description */
 .energy-description {
-  font-family: 'GTEastiDisplay', sans-serif; /* Use 'GTEastiDisplay' for descriptions */
+  font-family: 'GTEastiDisplay', sans-serif;
   font-size: 1.4rem;
   color: #555;
   line-height: 1.8;
@@ -82,14 +82,14 @@ body {
 }
 
 .highlight {
-  color: #FF851B;  /* Orange highlight for emphasis */
+  color: #FF851B;
   font-weight: bold;
-  font-family: 'Backline', sans-serif; /* Ensure highlight uses 'Backline' */
+  font-family: 'Backline', sans-serif;
 }
 
 /* Flavor Title */
 .flavor-title {
-  font-family: 'Cubano', sans-serif; /* Use 'Cubano' for flavor titles */
+  font-family: 'Cubano', sans-serif;
   font-size: 2.8rem;
   color: #FF851B;
   margin-bottom: 2rem;
@@ -108,13 +108,13 @@ body {
 
 .flavor-menu li {
   margin-bottom: 1.2rem;
-  font-family: 'GTEastiDisplay', sans-serif; /* Use 'GTEastiDisplay' for flavor descriptions */
+  font-family: 'GTEastiDisplay', sans-serif;
 }
 
 .flavor-menu .highlight {
   color: #FF851B;
   font-weight: bold;
-  font-family: 'Backline', sans-serif; /* Ensure highlight in flavors uses 'Backline' */
+  font-family: 'Backline', sans-serif;
 }
 
 /* Contact Section */
@@ -123,14 +123,14 @@ body {
 }
 
 .contact-title {
-  font-family: 'Cubano', sans-serif; /* Use 'Cubano' for contact title */
+  font-family: 'Cubano', sans-serif;
   font-size: 2.5rem;
   color: #FF851B;
   margin-bottom: 1.5rem;
 }
 
 .contact-email {
-  font-family: 'GTEastiDisplay', sans-serif; /* Use 'GTEastiDisplay' for contact email */
+  font-family: 'GTEastiDisplay', sans-serif;
   font-size: 1.3rem;
   color: #555;
 }
@@ -138,17 +138,17 @@ body {
 .email {
   color: #FF851B;
   font-weight: bold;
-  font-family: 'Backline', sans-serif; /* Ensure email uses 'Backline' */
+  font-family: 'Backline', sans-serif;
 }
 
-/* Extra Styling */
+/* Buttons */
 .energy-container .submit-button {
   padding: 1rem 2rem;
   background-color: #FF851B;
   color: #fff;
   border: none;
   border-radius: 50px;
-  font-family: 'Cubano', sans-serif; /* Use 'Cubano' for buttons */
+  font-family: 'Cubano', sans-serif;
   font-size: 1.4rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -170,5 +170,111 @@ body {
 
   .contact-title {
     font-size: 2rem;
+  }
+
+  .submit-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* Billion-Dollar Spacing Adjustments */
+.energy-container {
+  padding: 3rem 1rem;
+}
+
+.flavor-menu, .energy-menu {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Advanced Menu Styling */
+.energy-menu li {
+  display: block;
+  justify-content: flex-start; /* Align sizes and prices closely */
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.price {
+  font-size: 1.5rem; /* Larger price display */
+  margin-left: 0.5rem;
+}
+
+/* Advanced Flavor Descriptions */
+.flavor-menu li {
+  border-bottom: 1px solid #eaeaea;
+  padding: 1rem 0;
+}
+
+.flavor-menu .highlight {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Hover Effects */
+.energy-menu li:hover,
+.flavor-menu li:hover {
+  background-color: #fffae6;
+}
+
+.energy-container .submit-button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.energy-container .submit-button:hover {
+  transform: translateY(-3px);
+}
+
+/* Contact Section Styling */
+.contact-section {
+  background-color: #fffae6;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contact-title {
+  color: #ff851b;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-email {
+  font-size: 1.6rem;
+}
+
+.email {
+  color: #ff851b;
+  font-weight: bold;
+}
+
+/* Ultra Responsive Design for Smaller Screens */
+@media (max-width: 480px) {
+  .menu-title, .flavor-title {
+    font-size: 2rem;
+  }
+
+  .energy-menu li, .flavor-menu li {
+    font-size: 1.2rem;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-email {
+    font-size: 1.2rem;
+  }
+
+  .submit-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .energy-container {
+    padding: 1rem;
   }
 }

@@ -14,67 +14,56 @@
   src: url('./font3.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'AnotherFont';
-  src: url('./font4.otf') format('opentype');
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Backline', 'Cubano', 'GTEastiDisplay', 'AnotherFont', sans-serif; /* Ensure all elements use these fonts */
+  font-family: 'Cubano', 'GTEastiDisplay', sans-serif;  /* Only using readable fonts */
 }
 
 body {
   background-color: #fff;
   color: #333;
   line-height: 1.6;
-  font-family: 'Backline', sans-serif; /* Body text default to 'Backline' */
 }
 
 /* Catering Container */
 .catering-container {
   padding: 2rem;
-  background-color: #fff; /* White background for clarity */
+  background-color: #fff; 
   color: #333;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  font-family: 'Backline', sans-serif; /* Apply 'Backline' */
 }
 
 /* Title Styling */
 .catering-title {
-  font-family: 'Cubano', sans-serif; /* Use 'Cubano' for titles */
-  font-size: 3.5rem;
-  color: #FF851B; /* Orange color for the title */
+  font-family: 'Cubano', sans-serif;
+  font-size: 3rem;
+  color: #FF851B;
   margin-bottom: 2rem;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 /* Description Styling */
 .catering-description {
-  font-family: 'GTEastiDisplay', sans-serif; /* Use 'GTEastiDisplay' for description */
+  font-family: 'GTEastiDisplay', sans-serif;
   font-size: 1.4rem;
   color: #555;
-  line-height: 2;
-  margin-bottom: 2rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
   text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+/* Highlight Text */
 .highlight {
   color: #FF851B;
   font-weight: bold;
-  font-family: 'Backline', sans-serif; /* Ensure highlight also uses 'Backline' */
-}
-
-/* Menu Title */
-.menu-title {
-  font-family: 'Cubano', sans-serif; /* Use 'Cubano' for menu titles */
-  font-size: 2.8rem;
-  color: #FF851B;
-  margin-bottom: 1.5rem;
+  font-family: 'Cubano', sans-serif; /* A bold font, no cursive */
 }
 
 /* Menu List */
@@ -82,50 +71,52 @@ body {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 2rem;
-  font-family: 'Backline', sans-serif; /* Use 'Backline' for menu items */
+  font-family: 'Cubano', sans-serif;
+  font-size: 1.4rem;
 }
 
 .catering-menu li {
-  font-size: 1.5rem;
   color: #333;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .price {
   color: #FF851B;
   font-weight: bold;
+  font-family: 'GTEastiDisplay', sans-serif;  /* Using a readable font */
   font-size: 1.2rem;
-  font-family: 'Backline', sans-serif; /* Ensure prices also use 'Backline' */
 }
 
 /* Booking Section */
 .event-booking {
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 
 .booking-title {
-  font-family: 'Cubano', sans-serif; /* Use 'Cubano' for booking titles */
-  font-size: 2.5rem;
+  font-family: 'Cubano', sans-serif;
+  font-size: 2.8rem;
   color: #FF851B;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
 .booking-description {
-  font-family: 'GTEastiDisplay', sans-serif; /* Use 'GTEastiDisplay' for booking description */
+  font-family: 'GTEastiDisplay', sans-serif;
   font-size: 1.4rem;
-  color: #333;
-  margin-bottom: 1.5rem;
+  color: #555;
+  margin-bottom: 2rem;
 }
 
+/* Form Elements - No cursive */
 .form-input, .form-textarea {
   width: 100%;
-  padding: 1rem;
-  margin-bottom: 1.2rem;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
   border: 2px solid #FF851B;
-  border-radius: 10px;
-  font-size: 1.1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-family: 'GTEastiDisplay', sans-serif;  /* Easy-to-read font */
   background-color: #f8f8f8;
-  font-family: 'Backline', sans-serif; /* Use 'Backline' for form inputs */
 }
 
 .submit-button {
@@ -134,8 +125,8 @@ body {
   color: #fff;
   border: none;
   border-radius: 50px;
-  font-family: 'Cubano', sans-serif; /* Use 'Cubano' for buttons */
-  font-size: 1.4rem;
+  font-family: 'Cubano', sans-serif;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -144,84 +135,9 @@ body {
   background-color: #ff9b42;
 }
 
-/* Success/Error Message */
-.form-message {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  text-align: center;
-  font-family: 'GTEastiDisplay', sans-serif; /* Keep message consistent with other fonts */
-}
-
-.success {
-  color: #28a745; /* Success message in green */
-}
-
-.error {
-  color: #dc3545; /* Error message in red */
-}
-
-/* Payment Section */
-.payment-section {
-  margin-top: 3rem;
-}
-
-.payment-title {
-  font-family: 'Cubano', sans-serif; /* Use 'Cubano' for payment titles */
-  font-size: 2.5rem;
-  color: #FF851B;
-  margin-bottom: 1.5rem;
-}
-
-.payment-description {
-  font-family: 'GTEastiDisplay', sans-serif; /* Use 'GTEastiDisplay' for payment description */
-  font-size: 1.4rem;
-  color: #555;
-  margin-bottom: 2rem;
-}
-
-.payment-button {
-  padding: 1rem 2rem;
-  background-color: #FF851B;
-  color: #fff;
-  border: none;
-  border-radius: 50px;
-  font-family: 'Cubano', sans-serif; /* Use 'Cubano' for buttons */
-  font-size: 1.4rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.payment-button:hover {
-  background-color: #ff9b42;
-}
-
-/* Contact Section */
-.contact-section {
-  margin-top: 4rem;
-}
-
-.contact-title {
-  font-family: 'Cubano', sans-serif; /* Use 'Cubano' for contact titles */
-  font-size: 2.5rem;
-  color: #FF851B;
-  margin-bottom: 1.5rem;
-}
-
-.contact-email {
-  font-family: 'GTEastiDisplay', sans-serif; /* Use 'GTEastiDisplay' for contact details */
-  font-size: 1.4rem;
-  color: #555;
-}
-
-.email {
-  color: #FF851B;
-  font-weight: bold;
-  font-family: 'Backline', sans-serif; /* Ensure email uses 'Backline' */
-}
-
-/* Extra Styling */
+/* Non-refundable Fee */
 .non-refundable-fee {
-  font-family: 'Backline', sans-serif; /* Use 'Backline' for fee notices */
+  font-family: 'Cubano', sans-serif;
   font-size: 1.4rem;
   margin: 2rem 0;
 }
@@ -229,5 +145,78 @@ body {
 .fee {
   color: #FF851B;
   font-weight: bold;
-  font-family: 'Backline', sans-serif; /* Ensure fee amount uses 'Backline' */
+  font-family: 'Cubano', sans-serif; /* More readable font */
+}
+
+/* Contact Section */
+.contact-section {
+  margin-top: 3rem;
+}
+
+.contact-title {
+  font-family: 'Cubano', sans-serif;
+  font-size: 2.5rem;
+  color: #FF851B;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.contact-email {
+  font-family: 'GTEastiDisplay', sans-serif;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.email {
+  color: #FF851B;
+  font-weight: bold;
+  font-family: 'Cubano', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .catering-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .catering-description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .menu-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .catering-menu li {
+    font-size: 1.2rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .booking-title {
+    font-size: 2.2rem;
+  }
+
+  .form-input, .form-textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-email {
+    font-size: 1.2rem;
+  }
 }

@@ -43,34 +43,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Description Styling */
-.treats-description {
-  font-size: 1.3rem;
-  font-family: 'Cubano', sans-serif; /* Clean font */
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 2.5rem;
-  text-align: justify;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Highlighted Text */
-.highlight {
-  font-family: 'Hore', sans-serif;
-  font-weight: bold;
-  color: #FF851B; /* Orange highlight */
-}
-
 /* Menu Section */
-.menu-title {
-  font-size: 2.5rem;
-  font-family: 'GTEastiDisplay', sans-serif;
-  color: #FF851B;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-}
-
 .treats-menu {
   list-style: none;
   padding-left: 0;
@@ -82,23 +55,12 @@ body {
   margin-bottom: 0.8rem;
 }
 
-/* Price Styling */
+/* Price Styling with Easier-to-Read Font */
 .price {
-  font-size: 1rem;
-  font-family: 'Cubano', sans-serif;
-  color: #FF851B; /* Orange prices */
+  font-size: 1.2rem; /* Larger price font */
+  font-family: 'GTEastiDisplay', sans-serif; /* Easier to read font */
+  color: #FF851B; /* Orange price color */
   font-weight: bold;
-}
-
-/* Treat Description */
-.treat-description {
-  font-size: 1.2rem;
-  font-family: 'Cubano', sans-serif;
-  color: #555;
-  line-height: 1.6;
-  max-width: 700px;
-  margin: 0 auto 1.5rem;
-  text-align: justify;
 }
 
 /* Contact Section */
@@ -126,16 +88,16 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .treats-title, .menu-title, .contact-title {
+  .treats-title, .contact-title {
     font-size: 2.5rem;
   }
 
-  .treats-description, .treat-description {
+  .treats-menu li {
     font-size: 1.2rem;
   }
 
   .price {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .contact-title {

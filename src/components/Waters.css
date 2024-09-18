@@ -43,34 +43,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Description Styling */
-.waters-description {
-  font-size: 1.3rem;
-  font-family: 'Cubano', sans-serif; /* Clear and fun font */
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 2.5rem;
-  text-align: justify;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Highlighted Text */
-.highlight {
-  font-family: 'Hore', sans-serif;  /* Fun and unique font */
-  font-weight: bold;
-  color: #FF851B; /* Orange highlight */
-}
-
-/* Menu Section */
-.menu-title {
-  font-size: 2.5rem;
-  font-family: 'GTEastiDisplay', sans-serif; /* Bold and distinct */
-  color: #FF851B;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-}
-
+/* Water Sizes */
 .water-sizes {
   list-style: none;
   padding-left: 0;
@@ -84,24 +57,17 @@ body {
 
 /* Price Styling */
 .price {
-  font-size: 1rem;
-  font-family: 'Cubano', sans-serif;
+  font-size: 1.2rem;  /* Slightly larger font size for easier reading */
+  font-family: 'GTEastiDisplay', sans-serif; /* Easier to read font */
   color: #FF851B; /* Orange prices */
   font-weight: bold;
 }
 
 /* Flavor List */
-.flavor-title {
-  font-size: 2.5rem;
-  font-family: 'GTEastiDisplay', sans-serif;
-  color: #FF851B;
-  margin-bottom: 1.5rem;
-}
-
 .flavor-list {
   list-style: none;
   padding-left: 0;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.8;
   margin-bottom: 3rem;
   text-align: justify;
@@ -111,6 +77,12 @@ body {
 
 .flavor-list li {
   margin-bottom: 1.2rem;
+}
+
+.highlight {
+  font-family: 'Hore', sans-serif;  /* Fun and unique font */
+  font-weight: bold;
+  color: #FF851B; /* Orange highlight */
 }
 
 /* Contact Section */
@@ -138,16 +110,16 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .waters-title, .menu-title, .contact-title {
+  .waters-title, .contact-title {
     font-size: 2.5rem;
   }
 
-  .waters-description, .flavor-list li {
+  .water-sizes li, .flavor-list li {
     font-size: 1.2rem;
   }
 
   .price {
-    font-size: 0.9rem;
+    font-size: 1rem;  /* Smaller price font for mobile */
   }
 
   .contact-title {

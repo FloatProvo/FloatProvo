@@ -7,12 +7,10 @@ const HotChocolate = () => {
     <div className="hot-chocolate-container">
       <Header /> {/* Header with logo and dropdown */}
 
-      <h1 className="hot-chocolate-title">Hot Chocolate</h1>
-      <p className="hot-chocolate-description">
-        Warm up with our decadent and luxurious hot chocolates. At <span className="highlight">Float</span>, we take this cozy classic to the next level by blending rich, velvety flavors with whipped cream, spices, and more. Whether you’re looking for the soothing sweetness of vanilla or a spicy cinnamon kick, we’ve got a hot chocolate that’s sure to please. Sip, savor, and enjoy!
-      </p>
+      
+      
 
-      <h2 className="menu-title">Hot Chocolate Menu</h2>
+      <h1 className="menu-title">Hot Chocolate Menu</h1>
       {/* Displaying the price under the menu title */}
       <p className="hot-chocolate-price">Price: $3.49</p>
 

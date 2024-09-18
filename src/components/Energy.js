@@ -9,15 +9,13 @@ const Energy = () => {
 
       
 
-      <h1 className="menu-title">Energy Drinks</h1>
+      <h1 className="menu-title">Energy Drinks (Monster)</h1>
       <ul className="energy-menu">
         <li>Small - <span className="price">$5.49</span></li>
         <li>Medium - <span className="price">$5.99</span></li>
       </ul>
 
-      <p className="energy-description">
-        Our <span className="highlight">Monster Energy</span> collection features irresistible flavor combinations, each one meticulously crafted to deliver the perfect mix of energy and refreshment. Get ready for an unforgettable experience with every sip!
-      </p>
+      
 
       <h2 className="flavor-title">Flavors</h2>
       <ul className="flavor-menu">

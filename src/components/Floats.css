@@ -31,7 +31,7 @@ body {
 /* Floats Container */
 .floats-container {
   padding: 2rem;
-  background-color: #fefae0;  /* Light cream background */
+  background-color: #fefae0;
   color: #333;
   max-width: 1200px;
   margin: 0 auto;
@@ -40,40 +40,15 @@ body {
 }
 
 /* Title */
-.floats-title {
+.menu-title {
   font-family: 'Cubano', sans-serif;
   font-size: 3.5rem;
-  color: #FF851B;  /* Orange title color */
+  color: #FF851B;
   margin-bottom: 2rem;
   letter-spacing: 2px;
 }
 
-/* Description */
-.floats-description {
-  font-family: 'GTEastiDisplay', sans-serif;
-  font-size: 1.4rem;
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 2.5rem;
-  text-align: justify;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.highlight {
-  color: #FF851B;
-  font-weight: bold;
-  font-family: 'Backline', sans-serif;
-}
-
-/* Size Options */
-.menu-title {
-  font-family: 'Cubano', sans-serif;
-  font-size: 2.8rem;
-  color: #FF851B;
-  margin-bottom: 1.5rem;
-}
-
+/* Float Sizes - Prices next to sizes */
 .float-sizes {
   list-style-type: none;
   padding-left: 0;
@@ -86,17 +61,19 @@ body {
   margin-bottom: 0.8rem;
 }
 
-.price {
+.float-sizes li span {
+  margin-left: 0.5rem;
   color: #FF851B;
   font-weight: bold;
-  font-size: 1.2rem;
   font-family: 'Backline', sans-serif;
 }
 
+/* Float Note */
 .float-note {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 2rem;
+  font-family: 'GTEastiDisplay', sans-serif;
 }
 
 /* Signature Flavors */
@@ -152,9 +129,26 @@ body {
   font-family: 'Backline', sans-serif;
 }
 
+/* Buttons */
+.floats-container .submit-button {
+  padding: 1rem 2rem;
+  background-color: #FF851B;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Cubano', sans-serif;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.floats-container .submit-button:hover {
+  background-color: #ff9b42;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  .floats-title, .menu-title, .flavor-title {
+  .menu-title, .flavor-title {
     font-size: 2.5rem;
   }
 
@@ -164,5 +158,88 @@ body {
 
   .contact-title {
     font-size: 2rem;
+  }
+
+  .submit-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* Spacing and Layout Enhancements */
+.floats-container {
+  padding: 3rem 1rem;
+}
+
+.float-sizes, .flavor-menu {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Advanced Menu Styling */
+.float-sizes li {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.price {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* Advanced Flavor Descriptions */
+.flavor-menu li {
+  border-bottom: 1px solid #eaeaea;
+  padding: 1rem 0;
+}
+
+.flavor-menu .highlight {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Hover Effects */
+.float-sizes li:hover, .flavor-menu li:hover {
+  background-color: #fffae6;
+}
+
+.floats-container .submit-button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.floats-container .submit-button:hover {
+  transform: translateY(-3px);
+}
+
+/* Ultra Responsive Design for Smaller Screens */
+@media (max-width: 480px) {
+  .menu-title, .flavor-title {
+    font-size: 2rem;
+  }
+
+  .float-sizes li, .flavor-menu li {
+    font-size: 1.2rem;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-email {
+    font-size: 1.2rem;
+  }
+
+  .submit-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .floats-container {
+    padding: 1rem;
   }
 }

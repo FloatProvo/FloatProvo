@@ -44,6 +44,12 @@ body {
   margin: 0 auto;
 }
 
+.price {
+  font-weight: bold;
+  color: #FF851B;  /* Price in orange */
+  font-family: 'Cubano', sans-serif;  /* Fun bold font for price */
+}
+
 /* Root Beer List */
 .rootbeer-list {
   list-style-type: none;
@@ -60,6 +66,8 @@ body {
 
 .rootbeer-list li {
   margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 /* Root Beer Names Styling */
@@ -92,4 +100,19 @@ body {
   .rootbeer-list li strong {
     font-size: 1.4rem;
   }
+}
+
+/* Additional Styling */
+.rootbeer-container {
+  padding: 3rem 1rem;
+}
+
+.rootbeer-list {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.rootbeer-list li:hover {
+  background-color: #fffae6;
+  transition: background-color 0.3s ease;
 }
