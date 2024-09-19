@@ -84,7 +84,7 @@ const Catering = () => {
         <li>Additional 50 Floats - <span className="price">$350</span> (Four Float Options)</li>
       </ul>
 
-      <p className="non-refundable-fee">Non-refundable booking fee: <span className="fee">$300</span> (applied towards your total)</p>
+      <p className="non-refundable-fee">Non-refundable service fee: <span className="fee">$300</span> </p>
 
       <div className="event-booking">
         <h2 className="booking-title">Book Your Dream Event Today</h2>
