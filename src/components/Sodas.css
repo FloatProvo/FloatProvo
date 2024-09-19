@@ -55,11 +55,14 @@ body {
   margin-bottom: 0.8rem;
 }
 
+/* Update for Pricing Font */
 .price {
   font-size: 1.2rem; /* Slightly larger prices for better visibility */
   color: #FF851B; /* Orange prices */
   font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Updated font to Arial for clearer numbers */
 }
+
 
 /* Signature Soda Flavors */
 .flavor-list {
