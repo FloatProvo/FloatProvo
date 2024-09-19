@@ -58,10 +58,11 @@ body {
 /* Price Styling with Easier-to-Read Font */
 .price {
   font-size: 1.2rem; /* Larger price font */
-  font-family: 'GTEastiDisplay', sans-serif; /* Easier to read font */
+  font-family: 'Arial', sans-serif; /* Updated to a clearer, easier-to-read font */
   color: #FF851B; /* Orange price color */
   font-weight: bold;
 }
+
 
 /* Contact Section */
 .contact-section {
